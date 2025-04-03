@@ -1,11 +1,11 @@
 package br.com.lojinha.pojo;
 
 public class Produto {
-    public String nome;
-    public String marca;
+    private String nome;
+    private String marca;
     private double valor;
-    public String tamanho;
-    public String itensInclusos;
+    private String tamanho;
+    private String itensInclusos;
 
     public double getValor() {
         return this.valor;
