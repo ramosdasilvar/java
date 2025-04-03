@@ -7,13 +7,13 @@ public class LojinhaApp {
     public static void main(String[] args) {
         Produto meuProduto = new Produto();
 
-        meuProduto.nome = "Xbox Series S";
-        meuProduto.valor = 2499;
-        meuProduto.marca = "Microsoft";
-        meuProduto.tamanho = "Médio";
-        meuProduto.itensInclusos = "1 Controle";
+        meuProduto.setNome("Xbox Series S");
+        meuProduto.setValor(79.99);
+        meuProduto.setMarca("Microsoft");
+        meuProduto.setTamanho("Medio");
+        meuProduto.setItensInclusos("1 Controle");
 
-        System.out.println(meuProduto.valor);
+        System.out.println(meuProduto.getItensInclusos());
 
     }
 }
