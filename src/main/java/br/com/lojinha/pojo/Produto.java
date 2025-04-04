@@ -1,14 +1,20 @@
 package br.com.lojinha.pojo;
 
+import br.com.lojinha.enums.Tamanho;
+
 import java.util.List;
 
 public class Produto {
     private String nome;
     private String marca;
     private double valor;
-    private String tamanho;
-    //private String itensInclusos;
+    private Tamanho tamanho;
     private List<String> itensInclusos;
+
+    public Produto(String marcaInicial, Tamanho tamanhoInicial) {
+        this.marca = marcaInicial;
+        this.tamanho = tamanhoInicial;
+    }
 
     public double getValor() {
         return this.valor;
@@ -38,11 +44,11 @@ public class Produto {
         this.marca = novaMarca;
     }
 
-    public String getTamanho() {
+    public Tamanho getTamanho() {
         return this.tamanho;
     }
 
-    public void setTamanho(String novoTamanho) {
+    public void setTamanho(Tamanho novoTamanho) {
         this.tamanho = novoTamanho;
     }
 
