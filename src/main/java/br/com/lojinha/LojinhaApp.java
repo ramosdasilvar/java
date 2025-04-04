@@ -8,12 +8,12 @@ public class LojinhaApp {
         Produto meuProduto = new Produto();
 
         meuProduto.setNome("Xbox Series S");
-        meuProduto.setValor(79.99);
+        meuProduto.setValor(0.10);
         meuProduto.setMarca("Microsoft");
         meuProduto.setTamanho("Medio");
-        meuProduto.setItensInclusos("1 Controle");
+        meuProduto.setItensInclusos("2 Controle e 3 jogos");
 
-        System.out.println(meuProduto.getItensInclusos());
+        System.out.println(meuProduto.getValor());
 
     }
 }
