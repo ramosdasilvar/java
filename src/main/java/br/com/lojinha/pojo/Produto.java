@@ -9,7 +9,7 @@ public class Produto {
     private String marca;
     private double valor;
     private Tamanho tamanho;
-    private List<String> itensInclusos;
+    private List<ItemIncluso> itensInclusos;
 
     public Produto(String marcaInicial, Tamanho tamanhoInicial) {
         this.marca = marcaInicial;
@@ -52,11 +52,11 @@ public class Produto {
         this.tamanho = novoTamanho;
     }
 
-    public List<String> getItensInclusos() {
+    public List<ItemIncluso> getItensInclusos() {
         return this.itensInclusos;
     }
 
-    public void setItensInclusos(List<String> novoItensinclusos) {
+    public void setItensInclusos(List<ItemIncluso> novoItensinclusos) {
         this.itensInclusos = novoItensinclusos;
     }
 }
