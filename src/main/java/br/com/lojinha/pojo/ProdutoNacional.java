@@ -1,8 +1,9 @@
 package br.com.lojinha.pojo;
 
+import br.com.lojinha.Interfaces.Favorito;
 import br.com.lojinha.enums.Tamanho;
 
-public class ProdutoNacional extends Produto {
+public class ProdutoNacional extends Produto implements Favorito {
     private double impostoNacional;
 
     public ProdutoNacional(String marcaInicial, Tamanho tamanhoInicial) {
@@ -15,5 +16,9 @@ public class ProdutoNacional extends Produto {
 
     public void setImpostoNacional(double novoImpostoNacional) {
         impostoNacional = novoImpostoNacional;
+    }
+
+    public String getDadosFavoritos() {
+        return this.getNome() + ", " + this.getMarca() + " e " + this.getValor();
     }
 }
