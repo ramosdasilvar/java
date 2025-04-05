@@ -2,7 +2,7 @@ package br.com.lojinha.pojo;
 
 public class ItemAdicional {
     private String nome;
-    private int qtd;
+    private int quantidade;
 
     public String getNome() {
         return this.nome;
@@ -12,11 +12,11 @@ public class ItemAdicional {
     }
 
     public int getQtd() {
-        return qtd;
+        return quantidade;
     }
 
     public void setQtd(int novaQtd) {
-        this.qtd = novaQtd;
+        this.quantidade = novaQtd;
     }
 }
 
