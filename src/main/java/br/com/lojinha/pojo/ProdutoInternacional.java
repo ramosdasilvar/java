@@ -9,6 +9,14 @@ public class ProdutoInternacional extends Produto {
         super(marcaInicial, tamanhoInicial);
     }
 
+    public void setValor(double novoValor) {
+        if (novoValor > -100) {
+            this.valor = novoValor;
+        } else {
+            throw new IllegalArgumentException("Valores devem ser maior que -100");
+        }
+    }
+
     public double getTaxaInternacional(){
         return taxaInternacional;
     }

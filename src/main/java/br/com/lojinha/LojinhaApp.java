@@ -18,7 +18,7 @@ public class LojinhaApp {
         System.out.println("O tamanho do produto é: " +meuProduto.getTamanho());
 
         meuProduto.setNome("Xbox Series S");
-        meuProduto.setValor(2599.99);
+        meuProduto.setValor(30);
         meuProduto.setMarca("XBOX");
         meuProduto.setTamanho(Tamanho.PEQUENO);
 
@@ -57,5 +57,7 @@ public class LojinhaApp {
         ProdutoInternacional meuProdutoInternacional = new ProdutoInternacional("Xiaomi", Tamanho.GRANDE);
         meuProdutoInternacional.setTaxaInternacional(7.7);
         System.out.println(meuProdutoInternacional.getTaxaInternacional());
+
+        meuProdutoInternacional.setValor(-99.9);
     }
 }
