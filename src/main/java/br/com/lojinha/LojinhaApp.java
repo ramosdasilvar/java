@@ -38,5 +38,12 @@ public class LojinhaApp {
         System.out.println("A marca do passou a ser: " +meuProduto.getMarca());
         System.out.println("O tamanho do produto passou a ser: " +meuProduto.getTamanho());
 
+
+        System.out.println(meuProduto.getItensInclusos().get(0).getNome());
+        System.out.println(meuProduto.getItensInclusos().get(0).getQuantidade());
+        System.out.println(meuProduto.getItensInclusos().get(1).getNome());
+        System.out.println(meuProduto.getItensInclusos().get(1).getQuantidade());
+        System.out.println(meuProduto.getItensInclusos().get(2).getNome());
+        System.out.println(meuProduto.getItensInclusos().get(2).getQuantidade());
     }
 }
